@@ -8,12 +8,6 @@ import Topics from './topics';
 import { RouterMap, RouterMaps } from '../route';
 
 function MainContent() {
-  const routeList = RouterMaps.map((route: RouterMap) =>
-    <Route path={route.path} key={route.name}>
-      {route.module}
-    </Route>
-  )
-  console.log(routeList)
   return (
     <Switch>
       <Route path="/about">
