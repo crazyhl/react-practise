@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { RouterMap, RouterMaps } from '../route';
+import { RouterMap, RouterMaps } from '../router/route';
 function Nav() {
     const navList  = RouterMaps.map((route: RouterMap) => 
       <li key={route.name}>
